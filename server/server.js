@@ -1,15 +1,17 @@
 const express = require('express');
 const path = require('path');
-const server = express();
+const app = express();
 
-server.set('port', 3000);
+app.set('port', 9000);
 
-server.use('/', express.static('dist'));
+app.use(express.static('public'));
+app.use(express.static('dist'));
+app.use('/', express.static('dist'));
 
-server.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../dist/index.html'));
 });
 
-server.listen(server.get('port'), () => {
-  console.log('http://localhost:' + server.get('port'));
+app.listen(app.get('port'), () => {
+  console.log('http://localhost:' + app.get('port'));
 });

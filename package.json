@@ -1,5 +1,5 @@
 {
-  "name": "template-web-frontend",
+  "name": "boilerplate-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cherrypicker1113/template-web-frontend.git"
+    "url": "git+https://github.com/yong1000abc/boilerplate-react.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cherrypicker1113/template-web-frontend/issues"
+    "url": "https://github.com/yong1000abc/boilerplate-react/issues"
   },
-  "homepage": "https://github.com/cherrypicker1113/template-web-frontend#readme",
+  "homepage": "https://github.com/yong1000abc/boilerplate-react#readme",
   "devDependencies": {
     "@babel/core": "^7.18.6",
     "@babel/plugin-transform-runtime": "^7.18.6",
