@@ -1,7 +1,7 @@
 import {createAsyncThunk, createSlice, PayloadAction} from '@reduxjs/toolkit';
 import {SampleAgent} from 'src/sample/agent/SampleAgent';
 import {Sample} from 'src/sample/model/Sample';
-import {AppDispatch} from 'src/store';
+import {AppDispatch} from 'src/store/store';
 
 export type SamplesState = {
     samples: Sample[];

@@ -1,6 +1,6 @@
 import {useEffect} from 'react';
 import {fetchSamples, SamplesState} from 'src/sample/slice/samplesSlice';
-import {useTypedDispatch, useTypedSelector} from 'src/store';
+import {useTypedDispatch, useTypedSelector} from 'src/store/store';
 
 export function useSamples() {
   const {samples, page} = useTypedSelector<SamplesState>(state => state.samples);

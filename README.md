@@ -1,1 +1,1 @@
-# template-web-frontend
+# boilerplate-react
