@@ -4,6 +4,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 const {version: appVersion} = require('./package.json');
 
+const mode = process.env.mode || 'development';
+
 module.exports = (option) => {
   if (!option) option = {};
 
@@ -48,11 +50,13 @@ module.exports = (option) => {
         inject: false,
         templateParameters: {
           version: appVersion,
+          mode,
         },
       }),
       new MiniCssExtractPlugin(),
       new webpack.EnvironmentPlugin({
-        version: appVersion
+        version: appVersion,
+        mode,
       }),
     ],
   };
