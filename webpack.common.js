@@ -12,7 +12,8 @@ module.exports = (option) => {
       'index': [
         path.resolve(__dirname, 'src', 'index.tsx'),
         path.resolve(__dirname, 'src', 'index.scss')
-      ]
+      ],
+      'sw': path.resolve(__dirname, 'src', 'sw', 'sw.ts'),
     },
     output: {
       filename: '[name].js',

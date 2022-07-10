@@ -3,6 +3,7 @@ module.exports = {
     'browser': true,
     'es2021': true,
     'node': true,
+    'worker': true,
   },
   'extends': [
     'eslint:recommended',
@@ -41,5 +42,8 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/no-var-requires': 'off',
     'react/react-in-jsx-scope': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
+    'no-case-declarations': 'off',
   }
 };
