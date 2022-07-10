@@ -5,7 +5,7 @@ module.exports = merge(common({useStyleLoader: true}), {
   mode: 'development',
   devtool: 'source-map',
   devServer: {
-    static: './dist',
+    static: ['dist', 'public'],
     hot: true,
     compress: true,
     port: 9000,
